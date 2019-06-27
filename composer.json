@@ -1,5 +1,5 @@
 {
-    "name": "bigreja/memberProfileImage",
+    "name": "bigreja/memberprofileimage",
     "type": "silverstripe-vendormodule",
     "description": "Add image to profile in SilverStripe Members",
     "keywords": [
@@ -24,16 +24,13 @@
         "phpunit/phpunit": "^5.7"
     },
     "extra": {
-        "expose": [
-            "client"
-        ],
         "branch-alias": {
             "dev-master": "master"
         }
     },
     "autoload": {
         "psr-4": {
-            "bigreja\\memberProfileImage\\": "src/"
+            "bigreja\\memberprofileimage\\": "src/"
         }
     }
 }
