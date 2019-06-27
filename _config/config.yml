@@ -6,4 +6,4 @@ After:
 ---
 SilverStripe\Security\Member:
   extensions:
-    - memberprofileimage
+    - bigreja\memberprofileimage
