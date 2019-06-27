@@ -3,7 +3,7 @@
  * Add field for member image on profile!
  *
  */
-namespace bigreja\Extensions\memberprofileimage;
+namespace bigreja\memberprofileimage\Extensions;
 
 use SilverStripe\AssetAdmin\Forms\UploadField;
 use SilverStripe\ORM\DataExtension;
