@@ -56,6 +56,7 @@ public function getGridThumbnail()
 
 public function onAfterWrite()
 {
+    parent::onAfterWrite();
     if ($this->owner->profileImageID) {
         $this->owner->profileImage()->publishSingle();
     }
