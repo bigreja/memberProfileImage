@@ -1,9 +1,6 @@
 ---
 Name: memberprofileimage
-After:
-  - 'framework/*'
-  - 'cms/*'
 ---
 SilverStripe\Security\Member:
   extensions:
-    - bigreja\memberprofileimage
+    - bigreja\memberprofileimage\Extensions\memberprofileimage
