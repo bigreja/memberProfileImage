@@ -3,7 +3,7 @@
  * Add field for member image on profile!
  *
  */
-namespace bigreja\memberProfileImage;
+namespace bigreja\memberprofileimage;
 
 use SilverStripe\AssetAdmin\Forms\UploadField;
 use SilverStripe\ORM\DataExtension;
@@ -11,18 +11,18 @@ use SilverStripe\Assets\Image;
 use SilverStripe\Assets\File;
 use SilverStripe\Forms\FieldList;
 
-class memberProfileImage extends DataExtension
+class memberprofileimage extends DataExtension
 {
 
     private static $db = [
     ];
 
 	private static $has_one = array(
-		'ProfileImage' =>  Image::class,
+		'profileImage' =>  Image::class,
 	);
 
 	private static $owns = [
-		'ProfileImage'
+		'profileImage'
 	];
 
 
@@ -34,8 +34,8 @@ class memberProfileImage extends DataExtension
    public function updateCMSFields(FieldList $fields)
 {
 
-        $image = new UploadField('ProfileImage', 'Profile Image');
-        $image->setFolderName('ProfileImage');
+        $image = new UploadField('profileImage', 'Profile Image');
+        $image->setFolderName('profileImage');
         $image->getValidator()->setAllowedExtensions(['png','gif','jpeg','jpg']);
 
 
@@ -47,8 +47,8 @@ public function getGridThumbnail()
     {
         // $this->owner refers to the original instance. In this case a `Member`.
 
-        if($this->owner->ProfileImage()->exists()) {
-            return $this->owner->ProfileImage()->ScaleMaxHeight(50);
+        if($this->owner->profileImage()->exists()) {
+            return $this->owner->profileImage()->ScaleMaxHeight(50);
         }
 
         return "(no image)";

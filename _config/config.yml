@@ -1,9 +1,9 @@
 ---
-Name: memberProfileImage
+Name: memberprofileimage
 After:
   - 'framework/*'
   - 'cms/*'
 ---
 SilverStripe\Security\Member:
   extensions:
-    - memberProfileImage
+    - memberprofileimage
