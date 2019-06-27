@@ -54,5 +54,11 @@ public function getGridThumbnail()
         return "(no image)";
     }
 
+public function onAfterWrite()
+{
+    if ($this->owner->profileImageID) {
+        $this->owner->profileImage()->publishSingle();
+    }
+}
 
 }
