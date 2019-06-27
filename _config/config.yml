@@ -1,0 +1,6 @@
+---
+Name: memberProfileImage
+---
+SilverStripe\Security\Member:
+  extensions:
+    - memberProfileImage
