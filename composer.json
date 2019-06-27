@@ -1,0 +1,39 @@
+{
+    "name": "bigreja/memberProfileImage",
+    "type": "silverstripe-vendormodule",
+    "description": "Add image to profile in SilverStripe Members",
+    "keywords": [
+        "silverstripe",
+        "image",
+        "profile",
+        "members",
+        "security"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Bruno Igreja",
+            "homepage": "http://www.superbraga.com"
+        }
+    ],
+    "require": {
+        "silverstripe/vendor-plugin": "^1.0",
+        "silverstripe/asset-admin": "^1.4"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^5.7"
+    },
+    "extra": {
+        "expose": [
+            "client"
+        ],
+        "branch-alias": {
+            "dev-master": "master"
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "bigreja\\memberProfileImage\\": "src/"
+        }
+    }
+}
