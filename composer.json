@@ -16,11 +16,6 @@
             "homepage": "http://www.superbraga.com"
         }
     ],
-    "extra": {
-        "branch-alias": {
-            "dev-master": "master"
-        }
-    },
     "autoload": {
         "psr-4": {
             "bigreja\\memberprofileimage\\": "src/"
